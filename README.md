@@ -5,12 +5,12 @@ auto_run_wrf is a toolkit for running WRF automatically. The package consists ma
 - Create and plot WRF domain. The simulation area is located in the centre
 - Move WRF files to the target directory
 - Simplifying the writing of namelist
-- auto-run WPS and WRF
-- The file for download the FNL data and ERA data for WRF
+- Automatically run WPS and WRF
+- Download the FNL data and ERA data for WRF
 
 ### Method of running
 
-1. Downloading FNL or ERA data using scripts in the download_data folder
+1. Download the FNL or ERA data using scripts in the download_data folder
 
 2. Edit the **config.py**. Set the study area, time, directory and so on
 
@@ -19,7 +19,7 @@ auto_run_wrf is a toolkit for running WRF automatically. The package consists ma
 4. Run WPS  and specify the data type(FNL or ERA)
 
    ```python
-   python auto_wps.py fnl
+   python auto_wps.py FNL
    ```
 
 5. Run wrf and specify the mpirun number(real.exe will be one process)
